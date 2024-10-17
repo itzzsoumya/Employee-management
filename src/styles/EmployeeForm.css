@@ -1,0 +1,104 @@
+.employee-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px; /* Increased padding for a more spacious feel */
+  margin-top: 5vh;
+  background-color: #ffffff;
+  border-radius: 12px; /* Slightly increased border radius for a softer look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  border: 1px solid #e1e1e1; /* Softer border color */
+  text-align: left; /* Ensures labels and form fields are left-aligned */
+}
+
+.image-preview-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Space between the image and form fields */
+}
+
+.image-preview {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden; /* Ensure image fits within the circle */
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Changed to 'cover' for better fit */
+  display: block;
+}
+
+.employee-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px; /* Increased font size for better readability */
+  color: #444; /* Darker shade for contrast */
+  font-weight: bold;
+  text-align: left; /* Ensure labels remain left-aligned */
+}
+
+.employee-form input {
+  width: 100%;
+  padding: 12px; /* Increased padding for a more premium feel */
+  margin-bottom: 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Slightly increased border radius */
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for box-shadow */
+}
+
+.employee-form input:hover {
+  border-color: #00ff37; /* Border color on hover */
+  box-shadow: 0 2px 8px rgba(0, 255, 55, 0.3); /* Shadow effect on hover */
+}
+
+.employee-form input:focus {
+  border-color: #00ff37; /* Focus border color */
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 255, 55, 0.2); /* Enhanced shadow on focus */
+}
+
+.employee-form button {
+  display: inline-block;
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  background: linear-gradient(to right, #40e685, #1d9750);
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Increased border radius */
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added transition for box-shadow */
+}
+
+.employee-form button:hover {
+  opacity: 0.9; /* Slightly increased opacity on hover */
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.2); /* Enhanced shadow on hover */
+}
+
+.employee-form button:active {
+  background-color: #004495;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.15);
+}
+
+@media (max-width: 600px) {
+  .employee-form {
+    max-width: 100%;
+    padding: 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .employee-form input,
+  .employee-form button {
+    font-size: 12px;
+    padding: 10px; /* Adjusted padding for smaller screens */
+  }
+}

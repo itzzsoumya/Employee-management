@@ -1,0 +1,16 @@
+ 
+.custom-progress {
+    background: linear-gradient(
+    to right,                      
+    rgb(255, 45, 45),          
+    rgb(46, 255, 150),           
+    rgb(19, 129, 255)  
+) !important;
+  }
+  
+   
+  .Toastify__toast {
+    border-radius: 8px;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  }
+  
